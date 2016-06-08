@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:text="category"
+        android:paddingTop="6dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="amount"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+<ImageButton
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/edit"
+    android:background="@drawable/edit_button"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/edit"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@+id/amount"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@+id/category"
+        android:text="description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_below="@+id/description"
+        android:text="state"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip" />
+    <TextView
+        android:id="@+id/id"
+        android:layout_below="@+id/state"
+        android:text="id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id"
+        android:text="time"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>
